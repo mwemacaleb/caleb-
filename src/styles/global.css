@@ -5,12 +5,13 @@
   line-height: 1.5;
   font-weight: 400;
 
-  /* Colors */
+  /* Light mode colors */
   --primary-color: #646cff;
   --primary-color-hover: #535bf2;
-  --background-color: #242424;
-  --text-color: rgba(255, 255, 255, 0.87);
-  --button-bg: #1a1a1a;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --button-bg: #f3f4f6;
+  --section-bg: #f9fafb;
   
   /* Color scheme */
   color-scheme: light dark;
@@ -79,4 +80,25 @@ button:hover {
 
 .section {
   padding: 4rem 0;
+}
+
+/* Dark mode colors */
+.dark {
+  --background-color: #1a1a1a;
+  --text-color: rgba(255, 255, 255, 0.87);
+  --button-bg: #2d2d2d;
+  --section-bg: #242424;
+}
+
+/* Light mode */
+.light {
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --button-bg: #f3f4f6;
+  --section-bg: #f9fafb;
+}
+
+/* Smooth transitions for theme switching */
+.app {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
